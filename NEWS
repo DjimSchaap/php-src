@@ -8,6 +8,7 @@ PHP                                                                        NEWS
 - Opcache:
   . Fixed tracing JIT crash when a VM interrupt is handled during an observed
     user function call. (Levi Morrison)
+  . Fixed bug GH-21746 (Segfault with tracing JIT). (Arnaud)
 
 - OpenSSL:
   . Fix compatibility issues with OpenSSL 4.0. (jordikroon, Remi)
