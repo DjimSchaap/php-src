@@ -85,10 +85,6 @@ PHP                                                                        NEWS
     list of candidate encodings (with 200,000+ entries). (Jordi Kroon)
   . mbregex has been deprecated. (youkidearitai)
 
-- PCNTL:
-  . pcntl_exec() now throws a ValueError if the $args array is not a list
-    array. (Weilin Du)
-
 - Mysqli:
   . Added mysqli_quote_string() and mysqli::quote_string(). (Kamil Tekiela)
 
@@ -102,6 +98,10 @@ PHP                                                                        NEWS
     openssl_x509_parse() output). (StephenWall)
   . Added TLS session resumption support for streams with new context options
     and Openssl\Session class. (Jakub Zelenka)
+
+- PCNTL:
+  . pcntl_exec() now throws a ValueError if the $args array is not a list
+    array. (Weilin Du)
 
 - PDO_DBLIB;
   . Added dblib_handle_check_liveness handler. (freddy77)
