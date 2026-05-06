@@ -990,7 +990,7 @@ MYSQLND_METHOD(mysqlnd_res, fetch_into)(MYSQLND_RES * result, const unsigned int
 
 	HashTable *row_ht = Z_ARRVAL_P(return_value);
 	MYSQLND_FIELD *field = meta->fields;
-	for (unsigned i = 0; i < meta->field_count; i++) {
+	for (unsigned i = 0; i < meta->field_count; i++, field++) {
 		zval *data = &row_data[i];
 
 		if (flags & MYSQLND_FETCH_NUM) {
