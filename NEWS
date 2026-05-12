@@ -9,6 +9,8 @@ PHP                                                                        NEWS
   . Fixed tracing JIT crash when a VM interrupt is handled during an observed
     user function call. (Levi Morrison)
   . Fixed bug GH-21746 (Segfault with tracing JIT). (Arnaud)
+  . Fixed bug GH-22004 (Assertion failure at ext/opcache/jit/zend_jit_trace.c).
+    (Arnaud)
 
 - OpenSSL:
   . Fix compatibility issues with OpenSSL 4.0. (jordikroon, Remi)
